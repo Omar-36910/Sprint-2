@@ -38,6 +38,23 @@ async function insertSuperHero() {
     console.log('Superheroe insertado:', hero);   
 }
 
+async function insertSuperHero() {
+    const hero = new SuperHero({
+        nombreSuperHeroe: 'Ironman',
+        nombreReal: 'Tony Stark',
+        edad: 45,
+        planetaOrigen: 'Tierra',
+        debilidad: 'Depende de la tacnologia',
+        poderes: ['Armadura blindada', 'Volar', 'Laseres'],
+        aliados: ['Spiderman'],
+        enemigos: ['Mandarin'],
+        creador: 'Omar'
+    });
+    await hero.save();
+    console.log('Superheroe insertado:', hero);   
+}
+
+
 insertSuperHero();
 
 
